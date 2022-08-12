@@ -7,33 +7,41 @@
     <title>Zess T. Recipes</title>
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/style.css">
+  
 </head>
 <body>
-    <header>
+
+    <header id="header">
         <button class="login" id="login"> Log in</button>
         <button class="sign-up" id="sign-up"> Sign up</button>
-        <textarea class="search-engine" id="search-engine"></textarea>
-    </header>
-    <section id="contact">
-        <h1>Contact Us</h1>
-        <span>Choose your workout routine:</span> <span class="workout-routine" id="workout-routine"></span>
         <form>
-          <ul>
-            <li>
-              <label class="email" id="email">Email:</label>
-              <input type="text">
-            </li>
-            <li>
-                <span>Your message here:</span>
-              <textarea class="user-message" id="user-message"></textarea>
-            </li>
-          </ul>
-          <div>
-            <button type="submit">SEND</button>
-          </div>
+          <input type="text" id="search-recipe" name="recipe" placeholder="Search..."><br>
         </form>
-      </section>
+    </header>
+
+    <aside class="sidebar">
+      <h2 id="IngredientHdr">Ingredients needed: </h2>
+    <!-- array with ingredients here  -->
+    <ul id="ingredients">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>  
     
+    </aside>
+
+    <section id="photo section">
+      <h2 id="Recipe-Title">placeholder</h2>
+      <img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com//content/c2/f2/739e0fb94786a786418ec062ce23/herby-dry-brined-turkey-mullen-shot.jpg" alt="turkey">
+    </section>
+
+    <section id="contact-us">
+      <h2 id="contactHd">Contact us!</h2>
+      <p>Email</p>
+      <textarea id="user-email"></textarea>
+      <p>your message here</p>
+      <textarea id="user-message"></textarea>
+    </section>
 
 
 
