@@ -1,36 +1,32 @@
-*{
-    
-}
-:root{
- --tan: bisque;
- --brown: rgb(212, 173, 126) ; 
+/* The reset default CSS in case anything goes awry. */
 
-}
-body{
-    background-color: var(--tan);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--brown);
-    color: #ffffff;
+html {
+  height: 100%;
 }
-.sidebar{
-    margin-top: 10px;
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: left;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    size: 50px;
-    background-color: var(--brown);
-    flex-direction: row;
-    justify-content: space-between;
+
+body {
+  min-height: 100%;
+  line-height: 1;
+  font-family: sans-serif;
 }
-#IngredientHdr{
-    
-    flex-direction: row;
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+input, select, option, optgroup, textarea, button,
+pre, code {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+ol, ul {
+  list-style: none;
 }
