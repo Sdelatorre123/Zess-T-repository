@@ -25,11 +25,22 @@
 
     </nav>
   </header>
+  <section id="About">
+    <h1>About Us:</h1>
+    <p id="pAboutUS">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit purus quis commodo
+      pellentesque. In nunc justo, pellentesque ac malesuada ac, vehicula nec tellus. Etiam iaculis tristique sem.
+      Integer mi mauris, facilisis tempor eros sit amet, cursus tristique erat. Vivamus fringilla, sem sed porta
+      finibus, turpis ipsum varius arcu, in molestie erat dui in ante. Sed scelerisque mauris dolor, condimentum
+      condimentum nisi fringilla sed. Mauris nec felis ex. Proin ut suscipit ipsum. Nam eget turpis at mi venenatis
+      fringilla ut id purus. Etiam sodales arcu vel nisi euismod, in cursus tortor tempus. Maecenas a est consequat,
+      rutrum libero a, congue magna. Donec eleifend et orci non viverra. Cras sed nibh semper urna sollicitudin
+      sollicitudin et sit amet tellus.</p>
+  </section>
   <!-- side of page  -->
   <section class="sidebar">
     <h2 class="sidebarHdr">Ingredients needed: </h2>
     <!-- array with ingredients here  -->
-    <ul id="ingredients">
+    <ul id="ingredients" class="StyleSide">
       <li>Coffee</li>
       <li>Tea</li>
       <li>Milk</li>
@@ -38,10 +49,34 @@
   <!-- buy section -->
   <section class="sidebar" id="Buy">
     <h2 class="sidebarHdr">Buy Now:</h2>
+    <section class="StyleSide">
+      <!-- label for options -->
+      <label for="Products">Choose a Tasty Treat: </label>
+      <select name="ProductCode" id="code">
+        <option value="rigatoni">Rigatoni</option>
+        <option value="dave">Dave</option>
+        <option value="pumpernickel">Pumpernickel</option>
+        <option value="reeses">Reeses</option>
+      </select>
+      <!-- label for amount wanted -->
+      <label for="Quantity">Amount: </label>
+      <select name="Quantity" id="Qnty">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
 
+      <!-- pick a date -->
+      <p>Date to be delivered:</p><br>
+      <p id="Subtotal">Subtotal:</p>
+      <p id="Taxes">Taxes:</p>
+      <p id="Total">Total:</p>
+      <button type="button" id="BuyBtn">Buy Now!</button>
+    </section>
   </section>
-
-  <section id="photo section">
+  <!-- center of page section -->
+  <section id="photo section" class="itemInfo">
     <h2 id="Recipe-Title">placeholder</h2>
     <img
       src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com//content/c2/f2/739e0fb94786a786418ec062ce23/herby-dry-brined-turkey-mullen-shot.jpg"
