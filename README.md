@@ -1,5 +1,5 @@
 # Zess-T-repository Café Zest 
-Project 1 for UoM: 5-day weather forecast for any city 
+Project 1 for UoM: Café Zest
 
 For this week we were tasked with our first group project. At the conclusion of each phase, we work as a group to create a project that solves a real world problem. Working together as a team, we aim to show off our classroom experiences and collaboratively build an application worth presenting.    
 
