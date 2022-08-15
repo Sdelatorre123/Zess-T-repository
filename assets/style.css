@@ -1,13 +1,14 @@
-*{
-    
-}
-:root{
- --tan: bisque;
- --brown: rgb(212, 173, 126) ; 
+* {}
+
+:root {
+    --tan: bisque;
+    --brown: rgb(212, 173, 126);
 
 }
-body{
+
+body {
     background-color: var(--tan);
+    margin: 0;
 }
 
 #header {
@@ -15,22 +16,109 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--brown);
     color: #ffffff;
+    justify-content: space-between;
+    border-bottom: solid 2px brown;
 }
-.sidebar{
+
+header nav {
+    justify-content: end;
+    background-color: var(--tan);
+    float: right;
+    color: whitesmoke;
+    border-style: inset;
+
+}
+
+a {
+    margin-left: 8px;
+    font-size: 36px;
+    text-decoration: none;
+    color: var(--brown);
+    text-shadow: 2px 2px 4px #000000;
+}
+
+a:hover {
+    color: brown;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#searchIt {
+    float: right;
+}
+
+#searchBtn {
+    text-align: center;
+    background-color: var(--brown);
+    font-size: 20px;
+    display: inline-block;
+    border: none;
+    width: fit-content;
+
+}
+
+.sidebar {
     margin-top: 10px;
     margin-right: 20px;
+    margin-left: 20px;
     padding: 20px;
     clear: both;
     float: left;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    size: 50px;
+    border: brown solid 4px;
+    border-style:ridge;
+    font-family: cursive;
     background-color: var(--brown);
     flex-direction: row;
     justify-content: space-between;
 }
-#IngredientHdr{
+
+.sidebarHdr {
+    color: var(--tan);
+    font-weight: normal;
+    padding-bottom: 10px;
+    border-bottom: solid brown 4px;
+    font-size: 24px;
+}
+#ingredients{
+    margin-top: 5px;
+    border-style: inset;
+    background-color: var(--tan);
+    text-decoration: dotted;
+}
+li{
+    margin: 10px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--brown);
+    border-top:solid brown 3px ;
+}
+#ftrHdr{
+   color: var(--tan); 
+   text-shadow: 2px 2px 4px #000000;
+}
+
+.creators{
+   background-color: var(--tan); 
+   width: fit-content;
+   
+   border-style:inset;
+
+}
+#est{
+    font-family: cursive;
+    font-size: 20px;
+    color: var(--tan);
+    text-align: right;
+    text-shadow: 2px 2px 4px #000000;
     
-    flex-direction: row;
 }
