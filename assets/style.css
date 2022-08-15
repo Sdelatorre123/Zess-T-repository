@@ -66,21 +66,23 @@ a:hover {
     margin-bottom: 10px;
     border-bottom: solid 3px brown;
 }
-.itemInfo{
+
+.itemInfo {
     text-align: center;
     font-size: 30px;
     color: brown;
     font-family: cursive;
     padding: 5px;
-   
+
 
 }
-#Recipe-Title{
+
+#Recipe-Title {
     margin-bottom: 10px;
-    padding-bottom:10px ;
-    text-decoration: underline brown ;
-    
-    
+    padding-bottom: 10px;
+    text-decoration: underline brown;
+
+
 }
 
 .sidebar {
