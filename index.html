@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zess T. Recipes</title>
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
-  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zess T. Recipes</title>
+  <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="stylesheet" href="./assets/style.css">
+
 </head>
+
 <body>
+  <!-- create header -->
+  <header id="header">
+    
+    <nav>
+      <a href="#Home">Home</a>
+      <a href="#About">About</a>
+      <a href="#Buy">Buy</a>
+      <a href="Donations">Donations</a> 
+      <a href="Repositoy-link-here">GitHub</a> 
+     </nav>
+    <form>
+      <input type="text" id="search-recipe" name="recipe" placeholder="Search..."><br>
+    </form>
+  </header>
 
-    <header id="header">
-        <button class="login" id="login"> Log in</button>
-        <button class="sign-up" id="sign-up"> Sign up</button>
-        <form>
-          <input type="text" id="search-recipe" name="recipe" placeholder="Search..."><br>
-        </form>
-    </header>
-
-    <aside class="sidebar">
-      <h2 id="IngredientHdr">Ingredients needed: </h2>
+  <aside class="sidebar">
+    <h2 id="IngredientHdr">Ingredients needed: </h2>
     <!-- array with ingredients here  -->
     <ul id="ingredients">
       <li>Coffee</li>
       <li>Tea</li>
       <li>Milk</li>
-    </ul>  
-    
-    </aside>
+    </ul>
 
-    <section id="photo section">
-      <h2 id="Recipe-Title">placeholder</h2>
-      <img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com//content/c2/f2/739e0fb94786a786418ec062ce23/herby-dry-brined-turkey-mullen-shot.jpg" alt="turkey">
-    </section>
+  </aside>
 
-    <section id="contact-us">
-      <h2 id="contactHd">Contact us!</h2>
-      <p>Email</p>
-      <textarea id="user-email"></textarea>
-      <p>your message here</p>
-      <textarea id="user-message"></textarea>
-    </section>
+  <section id="photo section">
+    <h2 id="Recipe-Title">placeholder</h2>
+    <img
+      src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com//content/c2/f2/739e0fb94786a786418ec062ce23/herby-dry-brined-turkey-mullen-shot.jpg"
+      alt="turkey">
+  </section>
+
+  <section id="contact-us">
+    <h2 id="contactHd">Contact us!</h2>
+    <p>Email</p>
+    <textarea id="user-email"></textarea>
+    <p>your message here</p>
+    <textarea id="user-message"></textarea>
+  </section>
 
 
-    <p></p>
+  <p></p>
 
-    <script src="./assets/script.js"></script>
+  <script src="./assets/script.js"></script>
 </body>
+
 </html>
