@@ -6,9 +6,19 @@
 
 }
 
+h1 {
+    font-size: 40px;
+    color: brown;
+    margin-left: 20px;
+    width: fit-content;
+    border-bottom: solid brown 3px;
+
+}
+
 body {
     background-color: var(--tan);
     margin: 0;
+
 }
 
 #header {
@@ -47,18 +57,30 @@ a:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#searchIt {
-    float: right;
-}
-
-#searchBtn {
-    text-align: center;
-    background-color: var(--brown);
+#pAboutUS {
     font-size: 20px;
-    display: inline-block;
-    border: none;
-    width: fit-content;
+    font-family: cursive;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-bottom: solid 3px brown;
+}
+.itemInfo{
+    text-align: center;
+    font-size: 30px;
+    color: brown;
+    font-family: cursive;
+    padding: 5px;
+   
 
+}
+#Recipe-Title{
+    margin-bottom: 10px;
+    padding-bottom:10px ;
+    text-decoration: underline brown ;
+    
+    
 }
 
 .sidebar {
@@ -71,7 +93,7 @@ a:hover {
     width: 20%;
     height: 100%;
     border: brown solid 4px;
-    border-style:ridge;
+    border-style: ridge;
     font-family: cursive;
     background-color: var(--brown);
     flex-direction: row;
@@ -85,40 +107,44 @@ a:hover {
     border-bottom: solid brown 4px;
     font-size: 24px;
 }
-#ingredients{
+
+.StyleSide {
     margin-top: 5px;
     border-style: inset;
     background-color: var(--tan);
     text-decoration: dotted;
 }
-li{
+
+li {
     margin: 10px;
     text-shadow: 2px 2px 4px #000000;
 }
 
-footer{
+footer {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: var(--brown);
-    border-top:solid brown 3px ;
-}
-#ftrHdr{
-   color: var(--tan); 
-   text-shadow: 2px 2px 4px #000000;
+    border-top: solid brown 3px;
 }
 
-.creators{
-   background-color: var(--tan); 
-   width: fit-content;
-   
-   border-style:inset;
+#ftrHdr {
+    color: var(--tan);
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.creators {
+    background-color: var(--tan);
+    width: fit-content;
+
+    border-style: inset;
 
 }
-#est{
+
+#est {
     font-family: cursive;
     font-size: 20px;
     color: var(--tan);
     text-align: right;
     text-shadow: 2px 2px 4px #000000;
-    
+
 }
