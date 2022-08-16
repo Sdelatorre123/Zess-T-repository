@@ -85,10 +85,9 @@ a:hover {
     text-align: center;
     font-size: 30px;
     color: brown;
-    font-family: cursive;
+    font-family:cursive;
     padding: 5px;
-
-
+    width: 30%;
 }
 
 #Recipe-Title {
@@ -173,3 +172,13 @@ footer {
 
 
 }
+
+img {
+    width: 300px;
+    height: 250px;
+    border: 3px solid #ccc;
+    background:lightsalmon;
+    margin: auto;
+    padding: 15px 10px;
+}
+
