@@ -24,6 +24,7 @@ h1 {
     width: fit-content;
     border-bottom: solid brown 3px;
 
+
 }
 
 body {
@@ -42,6 +43,12 @@ body {
     margin-right: 20px;
     justify-content: space-between;
     border-bottom: solid 2px brown;
+}
+
+header nav form ul select {
+    font-size: 24px;
+    margin-top: 12px;
+
 }
 
 header nav {
@@ -117,12 +124,6 @@ a:hover {
     justify-content: space-between;
 }
 
-#IngredientHdr{
-    
-    flex-direction: row;
-}
-
-
 .sidebarHdr {
     color: var(--tan);
     font-weight: normal;
@@ -170,7 +171,9 @@ footer {
     text-align: right;
     text-shadow: 2px 2px 4px #000000;
 
+}
 
+<<<<<<< HEAD
 }
 
 img {
@@ -182,3 +185,5 @@ img {
     padding: 15px 10px;
 }
 
+=======
+>>>>>>> 3e057b3ff759e0656656343f5cdefd808b5c662a
