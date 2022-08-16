@@ -1,3 +1,14 @@
+*{
+    
+}
+:root{
+ --tan: bisque;
+ --brown: rgb(212, 173, 126) ; 
+
+}
+body{
+    background-color: var(--tan);
+}
 * {}
 
 :root {
@@ -18,7 +29,6 @@ h1 {
 body {
     background-color: var(--tan);
     margin: 0;
-
 }
 
 #header {
@@ -26,6 +36,10 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--brown);
     color: #ffffff;
+}
+.sidebar{
+    margin-top: 10px;
+    margin-right: 20px;
     justify-content: space-between;
     border-bottom: solid 2px brown;
 }
@@ -94,6 +108,8 @@ a:hover {
     float: left;
     width: 20%;
     height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    size: 50px;
     border: brown solid 4px;
     border-style: ridge;
     font-family: cursive;
@@ -101,6 +117,12 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
 }
+
+#IngredientHdr{
+    
+    flex-direction: row;
+}
+
 
 .sidebarHdr {
     color: var(--tan);
@@ -148,5 +170,6 @@ footer {
     color: var(--tan);
     text-align: right;
     text-shadow: 2px 2px 4px #000000;
+
 
 }
