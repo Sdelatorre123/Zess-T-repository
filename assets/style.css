@@ -23,9 +23,10 @@ body {
     background-color: var(--brown);
     color: #ffffff;
 }
-.side{
+
+.side {
     margin-right: 20px;
-   
+
     float: right;
     width: 20%;
     height: 100%;
@@ -84,11 +85,11 @@ a:hover {
     padding: 5px;
     width: 70%;
     display: flex;
-    
-    flex-wrap: wrap; 
 
-    
-    
+    flex-wrap: wrap;
+
+
+
 
 }
 
@@ -138,6 +139,7 @@ li {
     text-shadow: 2px 2px 4px #000000;
 }
 
+
 footer {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -174,12 +176,13 @@ img {
     background: lightsalmon;
     padding: 15px 10px;
 }
- .fit{
-   padding: 20px;
-   width: 25%;
- }
 
- button{
+.fit {
+    padding: 20px;
+    width: 25%;
+}
+
+button {
     margin-top: 10px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
- }
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
