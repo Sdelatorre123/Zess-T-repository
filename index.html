@@ -1,43 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zess T. Recipes</title>
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zess T. Recipes</title>
+  <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="stylesheet" href="./assets/style.css">
+
 </head>
+
 <body>
-    <header>
-        <button class="login" id="login"> Log in</button>
-        <button class="sign-up" id="sign-up"> Sign up</button>
-        <textarea class="search-engine" id="search-engine"></textarea>
-    </header>
-    <section id="contact">
-        <h1>Contact Us</h1>
-        <span>Choose your workout routine:</span> <span class="workout-routine" id="workout-routine"></span>
-        <form>
-          <ul>
-            <li>
-              <label class="email" id="email">Email:</label>
-              <input type="text">
-            </li>
-            <li>
-                <span>Your message here:</span>
-              <textarea class="user-message" id="user-message"></textarea>
-            </li>
-          </ul>
-          <div>
-            <button type="submit">SEND</button>
-          </div>
-        </form>
-      </section>
-    
+  <!-- create header -->
+  <header id="header">
+    <img src="./Images/Logo.JPG" id="logo">
+    <nav>
+      <a href="#Home">Home</a>
+      <a href="#About">About</a>
+      <a href="#Recipes">Recipes</a>
+      <a href="#Buy">Buy</a>
+      <a href="Donations">Donations</a>
+      <a href="https://github.com/Sdelatorre123/Zess-T-repository">GitHub</a>
+
+    </nav>
+  </header>
+  <section id="About">
+    <h1>About Us:</h1>
+    <p id="pAboutUS">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit purus quis commodo
+      pellentesque. In nunc justo, pellentesque ac malesuada ac, vehicula nec tellus. Etiam iaculis tristique sem.
+      Integer mi mauris, facilisis tempor eros sit amet, cursus tristique erat. Vivamus fringilla, sem sed porta
+      finibus, turpis ipsum varius arcu, in molestie erat dui in ante. Sed scelerisque mauris dolor, condimentum
+      condimentum nisi fringilla sed. Mauris nec felis ex. Proin ut suscipit ipsum. Nam eget turpis at mi venenatis
+      fringilla ut id purus. Etiam sodales arcu vel nisi euismod, in cursus tortor tempus. Maecenas a est consequat,
+      rutrum libero a, congue magna. Donec eleifend et orci non viverra. Cras sed nibh semper urna sollicitudin
+      sollicitudin et sit amet tellus.</p>
+  </section>
+  <!-- side of page  -->
+  <section class="sidebar">
+    <h2 class="sidebarHdr">Ingredients needed: </h2>
+    <!-- array with ingredients here  -->
+    <ul id="ingredients" class="StyleSide">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+  </section>
+  <!-- buy section -->
+  <section class="sidebar" id="Buy">
+    <h2 class="sidebarHdr">Buy Now:</h2>
+    <section class="StyleSide">
+      <!-- label for options -->
+      <label for="Products">Choose a Tasty Treat: </label>
+      <select name="ProductCode" id="code">
+        <option value="rigatoni">Rigatoni</option>
+        <option value="dave">Dave</option>
+        <option value="pumpernickel">Pumpernickel</option>
+        <option value="reeses">Reeses</option>
+      </select>
+      <!-- label for amount wanted -->
+      <label for="Quantity">Amount: </label>
+      <select name="Quantity" id="Qnty">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+
+      <!-- pick a date -->
+      <p>Date to be delivered:</p><br>
+      <p id="Subtotal">Subtotal:</p>
+      <p id="Taxes">Taxes:</p>
+      <p id="Total">Total:</p>
+      <button type="button" id="BuyBtn">Buy Now!</button>
+    </section>
+  </section>
+  <!-- center of page section -->
+  <section id="Recipes" class="itemInfo">
+    <h2 id="Recipe-Title">placeholder</h2>
+    <img
+      src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com//content/c2/f2/739e0fb94786a786418ec062ce23/herby-dry-brined-turkey-mullen-shot.jpg"
+      alt="turkey">
+  </section>
 
 
+  <footer>
+    <h2 id="ftrHdr">Special Thanks to:</h2>
+    <section class="creators">
+      <a href="https://github.com/WixkedLuck" id="David">WixkedLuck</a>
+      <a href="https://github.com/Sdelatorre123" id="Sergio">Sdelatorre123</a>
+      <a href="https://github.com/tnuon99" id="Sergio">tnuon99</a>
+      <a href="https://github.com/ElyLeslie" id="Ely">ElyLeslie</a>
+    </section>
+    <p id="est">Est. 2022</p>
+  </footer>
 
-
-    <script src="./assets/script.js"></script>
+  <script src="./assets/script.js"></script>
 </body>
+
 </html>
