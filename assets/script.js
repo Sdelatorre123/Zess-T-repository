@@ -1,3 +1,4 @@
+var dateInputEl = $('#datepicker');
 // var menu = [ 
 
 //     {
@@ -124,4 +125,11 @@
     
     
     
-    
+    //Datepicker widget
+    $(function () {
+        $('#datepicker').datepicker({
+          changeMonth: true,
+          changeYear: true,
+        });
+      });
+      

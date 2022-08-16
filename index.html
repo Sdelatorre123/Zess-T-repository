@@ -39,155 +39,155 @@
   </header>
   <section id="About">
     <h1>About Us:</h1>
-
-
-    <p id="AboutUS">
+    <p id="pAboutUS">
       Welcome!! All fellow anime lovers. We know you have been searching for a place to be yourself, scrolling through
       websites to find the perfect bakery. A place you can call your home, A place where you can enjoy delicious treats
       with friends! This community welcomes you with open arms and we allow you to express your likes and dislikes with
       us. Please feel free to buy a cake from us! ⁽⁽ଘ( ˊᵕˋ )ଓ⁾⁾
-
     </p>
   </section>
   <!-- side of page  -->
-  <section class="sidebar">
-    <h2 class="sidebarHdr">Ingredients needed: </h2>
-    <!-- array with ingredients here  -->
-    <ul id="ingredients" class="StyleSide">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ul>
-  </section>
-  <!-- buy section -->
-  <section class="sidebar" id="Buy">
-    <h2 class="sidebarHdr">Buy Now:</h2>
-    <section class="StyleSide">
-      <!-- label for options -->
-      <label for="Products">Choose a Tasty Treat: </label>
-      <select name="ProductCode" id="code">
-        <option value="rigatoni">Rigatoni</option>
-        <option value="dave">Dave</option>
-        <option value="pumpernickel">Pumpernickel</option>
-        <option value="reeses">Reeses</option>
-      </select>
-      <!-- label for amount wanted -->
-      <label for="Quantity">Amount: </label>
-      <select name="Quantity" id="Qnty">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
-
-      <!-- pick a date -->
-      <p>Date to be delivered:</p><br>
-      <p id="Subtotal">Subtotal:</p>
-      <p id="Taxes">Taxes:</p>
-      <p id="Total">Total:</p>
-      <button type="button" id="BuyBtn">Buy Now!</button>
+  <aside class="side">
+    <section class="sidebar">
+      <h2 class="sidebarHdr">Product Details: </h2>
+      <!-- array with ingredients here  -->
+      <ul id="ingredients" class="StyleSide">
+        <!-- append child create element li for product details  -->
+      </ul>
     </section>
-  </section>
+    <!-- buy section -->
+    <section class="sidebar" id="Buy">
+      <h2 class="sidebarHdr">Buy Now:</h2>
+      <section class="StyleSide">
+        <!-- label for options -->
+        <label for="Products">Choose a Tasty Treat: </label>
+        <select name="ProductCode" id="code">
+          <option value="Totoro">Totoro Cake</option>
+          <option value="DemSlyCake">Demon Slayer Cake</option>
+          <option value="SlrMoon">Sailor Moon Cake</option>
+          <option value="Pokemon">Pokemon Cake</option>
+          <option value="DemSlyCakeKyo">Kyojuro Demon Slayer Cake</option>
+          <option value="MyHero">My Hero Academia Cake</option>
+          <option value="Naruto">Naruto Cake</option>
+          <option value="Goku">Goku Fondant Cake</option>
+          <option value="Neverland">Promised Neverland Cake</option>
+          <option value="SwdArt">Sword Art Online Cake</option>
+          <option value="MyHeroKats">Katsuki My Hero Academia Cake</option>
+          <option value="DeathNote">Death Note Cake</option>
+          <option value="SwdArtFondant">Sword Art Online Fondant Cake</option>
+          <option value="AttackLevi">Attack on Titan Levi Cake</option>
+          <option value="DrgnCupcakes">Dragon Ball Z Cupcakes</option>
+          <option value="Assassin">Assassination Classroom Cake</option>
+        </select>
+        <!-- label for amount wanted -->
+        <label for="Quantity">Amount: </label>
+        <select name="Quantity" id="Qnty">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <br>
+        <!-- pick a date -->
 
-  <!-- donation section  -->
-  <section class="sidebar" id="Donations">
-    <h2 class="sidebarHdr">Donate:</h2>
-    <section class="StyleSide">
-    <p>Love what you see? feel free to donate here</p>
-    <label for="Donation$">$ </label>
-    <select name="Quantity" id="Qnty">
-      <option value="1">1</option>
-      <option value="2">10</option>
-      <option value="3">25</option>
-      <option value="4">50</option>
-    </select>
-    <input type="text" id="fname" placeholder="John">
-    <input type="text" id="lname" placeholder="Doe">
-    <button type="button" id="DonBtn">Donate!</button>
+        <label for="date" class="col-sm-4 col-form-label">Date: </label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="datepicker" autocomplete="off"><br>
+        </div>
+        <button type="button" id="TotalBtn">Total</button>
+      </section>
     </section>
 
-  </section>
+    <!-- donation section  -->
+    <section class="sidebar" id="Donations">
+      <h2 class="sidebarHdr">Donate:</h2>
+      <section class="StyleSide">
+        <p>Love what you see? feel free to donate here</p>
+        <label for="Donation$">$ </label>
+        <select name="Quantity" id="Qnty">
+          <option value="1">1</option>
+          <option value="2">10</option>
+          <option value="3">25</option>
+          <option value="4">50</option>
+        </select>
+        <input type="text" id="fname" placeholder="John">
+        <input type="text" id="lname" placeholder="Doe">
+        <button type="button" id="DonBtn">Donate!</button>
+      </section>
+
+    </section>
+  </aside>
   <!-- center of page section -->
-
+  <h2 id="Recipe-Title">Cakes for Sale</h2>
   <section id="Recipes" class="itemInfo">
-    <h2 id="Recipe-Title">Cakes for Sale</h2>
     <!-- Added price underneath pictures and added caption -->
-    <section> <img src="images/totoro-cake-food-art-4__605.jpeg" alt="Totoro Cake">
+    <section class="fit"> <img src="images/totoro-cake-food-art-4__605.jpeg" alt="Totoro Cake">
       <p> Totoro Cake </p>
       <p> $29.99 </p>
     </section>
-    <section> <img src="images/demon-slayer-cake.webp" alt="Demon Slayer Cake">
+    <section class="fit">
+      <img src="images/demon-slayer-cake.webp" alt="Demon Slayer Cake">
       <p> Demon Slayer Cake</p>
       <p> $49.99 </p>
     </section>
-    <section> <img src="images/973e5ab3850fba62a0c6e7a579d0158f--sailor-moon-cake-saylor-moon.jpg" alt="Sailor Moon Cake">
+    <section class="fit"> <img src="images/973e5ab3850fba62a0c6e7a579d0158f--sailor-moon-cake-saylor-moon.jpg"
+        alt="Sailor Moon Cake">
       <p> Sailor Moon Cake</p>
       <p> $29.99</p>
     </section>
-    <section><img src="images/1454080204-f79b1d986c44ea7030e156f38d53733b.jpeg" alt="Pokemon Cake">
+    <section  class="fit"><img src="images/1454080204-f79b1d986c44ea7030e156f38d53733b.jpeg" alt="Pokemon Cake">
       <p> Pokemon Cake</p>
       <p> $39.99 </p>
     </section>
-    <section> <img src="images/00dda6e50111e2546105b926f7b9bb77.jpg" alt="Kyōjurō Rengoku">
+    <section class="fit"> <img src="images/00dda6e50111e2546105b926f7b9bb77.jpg" alt="Kyōjurō Rengoku">
       <p> Kyojuro Demon Slayer Cake</p>
       <p> $19.99 </p>
     </section>
-    <section><img src="images/1d92d0e85798e72adcceb946fa586721.jpg" alt="My Hero Academia">
+    <section class="fit"><img src="images/1d92d0e85798e72adcceb946fa586721.jpg" alt="My Hero Academia">
       <p> My hero Academia Cake</p>
       <p> $49.99</p>
     </section>
-    <section><img src="images/22d3b0ec3cca4cdc4708040ea3b63b8e.jpg" alt="Naruto">
+    <section class="fit"><img src="images/22d3b0ec3cca4cdc4708040ea3b63b8e.jpg" alt="Naruto">
       <p> Naruto Cake</p>
       <p>$59.99</p>
     </section>
-    <section><img src="images/3709e813d20c25b822198a4b309d0353.jpg" alt="DragonBall">
+    <section class="fit"><img src="images/3709e813d20c25b822198a4b309d0353.jpg" alt="DragonBall">
       <p> Goku Fondant Cake</p>
       <p> $39.99 </p>
     </section>
-    <section><img src="images/56ab2ae00f25570a06a2ef35d0af1841.jpg" alt="Promised neverland">
+    <section class="fit"><img src="images/56ab2ae00f25570a06a2ef35d0af1841.jpg" alt="Promised neverland">
       <p> Promised Neverland</p>
       <p> $29.99 </p>
     </section>
-    <section><img src="images/6848671c45adcd58c62594cfe2ea6862.jpg" alt="Sword Art Online">
+    <section class="fit"><img src="images/6848671c45adcd58c62594cfe2ea6862.jpg" alt="Sword Art Online">
       <p> Sword Art Online Fondant Cake</p>
       <p> $15.99 </p>
     </section>
-    <section><img src="images/7966959f640f1b50b2fe4aa0af35b3df.jpg" alt="My hero Academia">
+    <section class="fit"><img src="images/7966959f640f1b50b2fe4aa0af35b3df.jpg" alt="My hero Academia">
       <p> Katsuki My Hero Academia </p>
       <p> $39.99 </p>
     </section>
-    <section><img src="images/89caf76a68fc43af537f7b37e17a74a3.jpg" alt="Death Note">
+    <section class="fit"><img src="images/89caf76a68fc43af537f7b37e17a74a3.jpg" alt="Death Note">
       <p> Death Note</p>
       <p> $19.99 </p>
     </section>
-    <section><img src="images/a5e1cc37a0b266057ad954a1918b2b1e.jpg" alt="Sword art online">
+    <section class="fit"><img src="images/a5e1cc37a0b266057ad954a1918b2b1e.jpg" alt="Sword art online">
       <p> Sword Art Online Fondant Cake</p>
       <p> $39.99 </p>
     </section>
-    <section><img src="images/c637aa1c46cc1285cfa477ab150159f8.jpg" alt="Attack on titan">
+    <section class="fit"><img src="images/c637aa1c46cc1285cfa477ab150159f8.jpg" alt="Attack on titan">
       <p> Attack On Titan Levi</p>
       <p> $69.99 </p>
     </section>
-    <section><img src="images/da9c9bcf77b60cf8ef9af5943adca8fd.jpg" alt="DragonBall Z">
+    <section class="fit"><img src="images/da9c9bcf77b60cf8ef9af5943adca8fd.jpg" alt="DragonBall Z">
       <p> DragonBall Z Cupcake</p>
       <p> 10 Cupcakes for $15 </p>
     </section>
-    <section><img src="images/images-1.jpg" alt="Assassination Classroom">
+    <section class="fit"><img src="images/images-1.jpg" alt="Assassination Classroom">
       <p> Assassination Classroom </p>
       <p> $49.99 </p>
     </section>
-    <section><img src="images/images.jpg" alt="Ace and Luffy">
-      <p> Luffy and Ace Cake </p>
-      <p> $29.99 </p>
-    </section>
-    <section><img src="images/kirby.jpg" alt="Kirby Maccaroons">
-      <p> Kirby Maccaroons</p>
-      <p> 10 for $20 </p>
-    </section>
-    <section><img src="images/pokemon-maccaroons-04.webp" alt=" Pokemon maccaroons">
-      <p> Pokemon Maccaroons</p>
-      <p> 10 for $20 </p>
-    </section>
+    
   </section>
 
 
@@ -206,8 +206,8 @@
   <p></p>
 
 
-
-
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="./assets/script.js"></script>
 </body>
 
