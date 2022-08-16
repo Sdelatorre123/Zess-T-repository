@@ -1,3 +1,14 @@
+*{
+    
+}
+:root{
+ --tan: bisque;
+ --brown: rgb(212, 173, 126) ; 
+
+}
+body{
+    background-color: var(--tan);
+}
 * {}
 
 :root {
@@ -13,12 +24,12 @@ h1 {
     width: fit-content;
     border-bottom: solid brown 3px;
 
+
 }
 
 body {
     background-color: var(--tan);
     margin: 0;
-
 }
 
 #header {
@@ -26,8 +37,18 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--brown);
     color: #ffffff;
+}
+.sidebar{
+    margin-top: 10px;
+    margin-right: 20px;
     justify-content: space-between;
     border-bottom: solid 2px brown;
+}
+
+header nav form ul select {
+    font-size: 24px;
+    margin-top: 12px;
+
 }
 
 header nav {
@@ -94,6 +115,8 @@ a:hover {
     float: left;
     width: 20%;
     height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    size: 50px;
     border: brown solid 4px;
     border-style: ridge;
     font-family: cursive;
