@@ -37,6 +37,12 @@ body {
     border-bottom: solid 2px brown;
 }
 
+header nav form ul select {
+    font-size: 24px;
+    margin-top: 12px;
+
+}
+
 header nav {
     justify-content: end;
     background-color: var(--tan);
