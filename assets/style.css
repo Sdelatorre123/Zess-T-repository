@@ -1,9 +1,198 @@
+:root {
+    --tan: bisque;
+    --brown: rgb(212, 173, 126);
 
-body {
-    background-color: orange;
 }
 
 h1 {
-    color: burlywood;
+    font-size: 40px;
+    color: brown;
+    margin-left: 20px;
+    width: fit-content;
+    border-bottom: solid brown 3px;
 }
 
+body {
+    background-color: var(--tan);
+    margin: 0;
+}
+
+#header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--brown);
+    color: #ffffff;
+}
+
+.side {
+    margin-right: 20px;
+
+    float: right;
+    width: 20%;
+    height: 100%;
+
+}
+
+
+header nav form ul select {
+    font-size: 24px;
+    margin-top: 12px;
+
+}
+
+header nav {
+    justify-content: end;
+    background-color: var(--tan);
+    float: right;
+    color: whitesmoke;
+    border-style: inset;
+
+}
+
+a {
+    margin-left: 8px;
+    font-size: 36px;
+    text-decoration: none;
+    color: var(--brown);
+    text-shadow: 2px 2px 4px #000000;
+}
+
+a:hover {
+    color: brown;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#pAboutUS {
+    font-size: 20px;
+    font-family: cursive;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-bottom: solid 3px brown;
+}
+
+.itemInfo {
+    text-align: center;
+    font-size: 30px;
+    color: brown;
+    font-family: cursive;
+    padding: 5px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+
+}
+
+#Recipe-Title {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 40px;
+    color: brown;
+    text-decoration: underline brown;
+
+
+}
+
+.sidebar {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    height: 100%;
+    size: 50px;
+    border: brown solid 4px;
+    border-style: ridge;
+    font-family: cursive;
+    background-color: var(--brown);
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sidebarHdr {
+    color: var(--tan);
+    font-weight: normal;
+    padding-bottom: 10px;
+    border-bottom: solid brown 4px;
+    font-size: 24px;
+}
+
+.StyleSide {
+    margin-top: 5px;
+    border-style: inset;
+    background-color: var(--tan);
+    text-decoration: dotted;
+}
+#TotalHdr{
+    margin-top: 10px;
+    border-top: solid brown 3px;
+}
+
+li {
+    margin: 10px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--brown);
+    border-top: solid brown 3px;
+}
+
+#ftrHdr {
+    color: var(--tan);
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.creators {
+    background-color: var(--tan);
+    width: fit-content;
+
+    border-style: inset;
+
+}
+
+#est {
+    font-family: cursive;
+    font-size: 20px;
+    color: var(--tan);
+    text-align: right;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+img {
+    width: 300px;
+    height: 250px;
+    border: 3px solid #ccc;
+    background: lightsalmon;
+    padding: 15px 10px;
+}
+
+.fit {
+    padding: 20px;
+    width: 25%;
+    
+}
+
+button {
+    margin-top: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 1700px) {
+ .itemInfo{
+    flex-direction: column;
+ }    
+}
