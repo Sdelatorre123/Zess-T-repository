@@ -1,5 +1,21 @@
-var ingredients = $("#ingredients")
+var ingredients = $("#ingredients");
+var donateList = $("#donateList");
+var firstname = $("#fname");
 
+var quantity = $("#Qnty :selected");
+
+
+
+
+$("[id=DonBtn]").on("click", function(event)
+ {
+    console.log(quantity.text())
+        var nameInput = $('<li>');
+       nameInput.text(firstname.val());
+        nameInput.attr('id', 'userinput1');
+        donateList.append(nameInput);
+  
+ })
 
 var menu = [ 
 
@@ -478,3 +494,4 @@ $("[id=AssassinBtn]").on("click", function(event)
 
      ingredients.append(munchies).append(anime).append(hue);
 })
+
