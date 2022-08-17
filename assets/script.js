@@ -6,6 +6,33 @@ var AmountDue = document.getElementById('Due');
 var productPrice = 0;
 var total = 0;
 
+
+//fetch request for Anime of the week section 
+const base_url = "https://api.jikan.moe/v3";
+
+function Anime(event){
+    fetch(`${base_url}/search/anime?q=Naruto&page=1`)
+    .then(data=>console.log(data))
+    // .then(updateDom)
+    // .catch(err=>console.warn(err.message));
+}
+//call fuction automatically
+Anime();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//calcuate total for buy section
 function calculateTotal() {
     var treatselection = document.querySelector('#code');
     var item = treatselection.options[treatselection.selectedIndex].value;
