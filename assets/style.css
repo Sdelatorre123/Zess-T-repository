@@ -132,6 +132,10 @@ a:hover {
     background-color: var(--tan);
     text-decoration: dotted;
 }
+#TotalHdr{
+    margin-top: 10px;
+    border-top: solid brown 3px;
+}
 
 li {
     margin: 10px;
