@@ -1,15 +1,125 @@
 var ingredients = $("#ingredients");
 var donateList = $("#donateList");
 var firstname = $("#fname");
-var AmountDonated=document.getElementById('AmtDonated');
+var AmountDonated = document.getElementById('AmtDonated');
+var AmountDue = document.getElementById('Due');
+var productPrice = 0;
+var total = 0;
+
+function calculateTotal() {
+    var treatselection = document.querySelector('#code');
+    var item = treatselection.options[treatselection.selectedIndex].value;
+
+    var Quantity = document.querySelector('#Qnty');
+    var Amount = Quantity.options[Quantity.selectedIndex].value;
+    // if statements to go through options and assign pricing
+    if (item == "Totoro") {
+        productPrice = 29.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "DemSlyCake") {
+        productPrice = 49.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "SlrMoon") {
+        productPrice = 29.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "Pokemon") {
+        productPrice = 39.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "DemSlyCakeKyo") {
+        productPrice = 19.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "MyHero") {
+        productPrice = 49.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "Naruto") {
+        productPrice = 59.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "Goku") {
+        productPrice = 39.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "Neverland") {
+        productPrice = 29.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "SwdArt") {
+        productPrice = 15.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "MyHeroKats") {
+        productPrice = 39.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "DeathNote") {
+        productPrice = 19.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "SwdArtFondant") {
+        productPrice = 39.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "AttackLevi") {
+        productPrice = 69.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "DrgnCupcakes") {
+        productPrice = 15
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "Assassin") {
+        productPrice = 49.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+}
+
+
 
 
 
 //donate button
 $("[id=DonBtn]").on("click", function (event) {
-   
+
     var nameInput = $('<li>');
-    nameInput.text(firstname.val()+" $"+AmountDonated.value);
+    nameInput.text(firstname.val() + " $" + AmountDonated.value);
     nameInput.attr('id', 'userinput1');
     donateList.append(nameInput);
 
@@ -477,3 +587,4 @@ $("[id=AssassinBtn]").on("click", function (event) {
     ingredients.append(munchies).append(anime).append(hue);
 })
 
+$("[id=TotalBtn]").on("click", calculateTotal)
