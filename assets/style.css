@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 :root {
     --tan: bisque;
     --brown: rgb(212, 173, 126);
@@ -17,12 +18,27 @@ body {
     margin: 0;
 }
 
+=======
+*{
+    
+}
+:root{
+ --tan: bisque;
+ --brown: rgb(212, 173, 126) ; 
+
+}
+body{
+    background-color: var(--tan);
+}
+
+>>>>>>> Stashed changes
 #header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--brown);
     color: #ffffff;
 }
+<<<<<<< Updated upstream
 
 .side {
     margin-right: 20px;
@@ -90,6 +106,25 @@ a:hover {
 
 
 
+=======
+.sidebar{
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: left;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    size: 50px;
+    background-color: var(--brown);
+    flex-direction: row;
+    justify-content: space-between;
+}
+#IngredientHdr{
+    
+    flex-direction: row;
+>>>>>>> Stashed changes
 }
 
 #Recipe-Title {
