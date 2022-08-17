@@ -27,7 +27,7 @@ Clone the repository on GitHub then open Git on your local machine. First find a
 The purpose of this project is to make a functional webpage that uses server-side APIs to retrieve data based off of requests made to a url. With the data retrieved, we are able to display an updated menu and other various items. 
 
 
-![Project01-CafeZest](./images/Weather-Dash.PNG)
+![Project01-CafeZest](./images/ProjectZest.PNG)
 
 # Deployed Site 
 
