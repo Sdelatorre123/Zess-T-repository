@@ -3,11 +3,11 @@ Project 1 for UoM: Café Zest
 
 For this week we were tasked with our first group project. At the conclusion of each phase, we work as a group to create a project that solves a real world problem. Working together as a team, we aim to show off our classroom experiences and collaboratively build an application worth presenting.    
 
-- The motivation behind this project was to collaboratively work together creating a project based around a café menu. The visual appeal of food is undeniable, and creating a website that a customer can view products and see their ingredients is also key to standing out in the food industry. 
+- The motivation behind this project was to collaboratively work together creating a project based around a café menu. The visual appeal of food is undeniable, and creating a website that a customer can view products and see their details is also key to standing out in the food industry. 
  
 - We built this project to advance our skills working together as a team and further developing our coding skills for web development. 
 
-- This project resolves around having a search feature for a user to interact with and look at various products offered by the café.Several key details about each product are shown such as ingredients, a visual representation of the product and price. Furthermore, the customer can also "purchase" an item and have it delivered on a date specified by the customer. 
+- This project resolves around having products for a user to interact with and look at various details and purchase options offered by the café.Several key details about each product are shown such as details, a visual representation of the product and price. Furthermore, the customer can also "purchase" an item and buy in bulk.
 
 - Completion of this project allowed for us to become more knowledgeable on third-party APIs and completion of an online cafe shop that keeps local storage elements for customers' orders.  
 
