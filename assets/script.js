@@ -8,13 +8,13 @@ var total = 0;
 
 
 //fetch request for Anime of the week section 
-const base_url = "https://api.jikan.moe/v3";
+const base_url = "https://api.jikan.moe/v4/anime/{id}/pictures";
 
 function Anime(event){
-    fetch(`${base_url}/search/anime?q=Naruto&page=1`)
-    .then(data=>console.log(data))
-    // .then(updateDom)
-    // .catch(err=>console.warn(err.message));
+    //fetch(`${base_url}/search/anime?q=${query}&page=1`)
+    //.then(data=>console.log(data))
+    //.then(updateDom)
+    //.catch(err=>console.warn(err.message));
 }
 //call fuction automatically
 Anime();
