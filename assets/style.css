@@ -132,6 +132,11 @@ a:hover {
     background-color: var(--tan);
     text-decoration: dotted;
 }
+.ChrofWeek{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+}
 #TotalHdr{
     margin-top: 10px;
     border-top: solid brown 3px;
@@ -170,6 +175,9 @@ footer {
     text-align: right;
     text-shadow: 2px 2px 4px #000000;
 
+}
+#ClearStorage{
+    text-align: right;
 }
 
 img {
