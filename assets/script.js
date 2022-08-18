@@ -163,6 +163,8 @@ $("[id=DonBtn]").on("click", function (event) {
     nameInput.text(firstname.val() + " $" + AmountDonated.value);
     nameInput.attr('id', 'userinput1');
     donateList.append(nameInput);
+    localStorage.setItem("UserName", JSON.stringify(firstname.val()));
+    firstname.val() = JSON.parse(localStorage.getItem("UserName"));
 
 })
 
