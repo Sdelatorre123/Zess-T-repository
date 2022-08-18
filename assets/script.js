@@ -5,30 +5,34 @@ var AmountDonated = document.getElementById('AmtDonated');
 var AmountDue = document.getElementById('Due');
 var productPrice = 0;
 var total = 0;
-let createImage1= document.createElement('img');
+let createImage1 = document.createElement('img');
+
+
+// clear local storage btn
+$("[id=ClearStorage]").on("click", localStorage.clear());
 
 
 //fetch request for Anime of the week section 
 const base_url = "https://api.jikan.moe/v3";
-function Anime(event){
+function Anime(event) {
     fetch(`${base_url}/manga/1/characters`)
-    .then(res=>res.json())
-    .then(data=> //console.log(data)
-            {
+        .then(res => res.json())
+        .then(data => //console.log(data)
+        {
             var characterImage = data.characters[0].image_url;
             //console.log(characterImage);
-        var charactername = data.characters[0].name;
+            var charactername = data.characters[0].name;
 
-        createImage1.src= characterImage;
-        document.getElementById('CharacterName').append(charactername);
-        document.getElementById('CharacterName').append(createImage1);
-        //console.log(charactername);
-    })
+            createImage1.src = characterImage;
+            document.getElementById('CharacterName').append(charactername);
+            document.getElementById('CharacterName').append(createImage1);
+            //console.log(charactername);
+        })
 }
 
 
-    //.then(updateDom)
-    //.catch(err=>console.warn(err.message));
+//.then(updateDom)
+//.catch(err=>console.warn(err.message));
 
 //call fuction automatically
 Anime();
@@ -146,6 +150,30 @@ function calculateTotal() {
     }
     if (item == "Assassin") {
         productPrice = 49.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "TodorokiDrink") {
+        productPrice = 10.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "DeadlyDrink") {
+        productPrice = 12.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "StrawberryDrink") {
+        productPrice = 9.99
+        total = (productPrice * Amount);
+        console.log(total);
+        AmountDue.textContent = ("$" + total);
+    }
+    if (item == "NarutoDrink") {
+        productPrice = 10.99
         total = (productPrice * Amount);
         console.log(total);
         AmountDue.textContent = ("$" + total);

@@ -69,6 +69,10 @@
           <option value="AttackLevi">Attack on Titan Levi Cake</option>
           <option value="DrgnCupcakes">Dragon Ball Z Cupcakes</option>
           <option value="Assassin">Assassination Classroom Cake</option>
+          <option value="TodorokiDrink">Todoroki Raspberry Cream Soda</option>
+          <option value="DeadlyDrink">Deadly Tropical Paradise</option>
+          <option value="StrawberryDrink">Strawberry Smoothie</option>
+          <option value="NarutoDrink">Naruto Latte</option>
         </select>
         <!-- label for amount wanted -->
         <label for="Quantity">Amount: </label><br>
@@ -93,7 +97,7 @@
         <label for="Donation$">$ </label>
         <input type="number" id="AmtDonated" placeholder="10">
         <input type="text" id="fname" placeholder="John Doe">
-        
+
         <button type="button" id="DonBtn">Donate!</button>
       </section>
 
@@ -110,11 +114,13 @@
     <!-- Character of the week-->
     <section class="sidebar">
       <h2 class="sidebarHdr">Character of the Week:</h2>
+      <section class="ChrofWeek">
       <p id="CharacterName"></p>
+      </section>
     </section>
   </aside>
   <!-- center of page section -->
-  <h2 id="Recipe-Title">Cakes for Sale</h2>
+  <h2 id="Recipe-Title">Tasty Treats and Drinks for Sale</h2>
   <section id="Recipes" class="itemInfo">
     <!-- Added price underneath pictures and added caption -->
     <section class="fit"> <img src="images/totoro-cake-food-art-4__605.jpeg" alt="Totoro Cake">
@@ -198,28 +204,28 @@
       <p> Assassination Classroom </p>
       <p> $49.99 </p>
       <button type="button" id="AssassinBtn">Details</button>
-      </section>
-      <section class="fit"> <img src="images/420735.jpg" alt="Shoto Todoroki drink">
-        <p> Todoroki Raspberry Cream soda</p>
-        <p> $10.99 </p>
-        <button type="button" id="ShotoTodorokiDrinkBtn">Details</button>
-      </section>
-      <section class="fit"> <img src="images/jump11.jpg" alt="Promised neverland drink">
+    </section>
+    <section class="fit"> <img src="images/420735.jpg" alt="Shoto Todoroki drink">
+      <p> Todoroki Raspberry Cream soda</p>
+      <p> $10.99 </p>
+      <button type="button" id="ShotoTodorokiDrinkBtn">Details</button>
+    </section>
+    <section class="fit"> <img src="images/jump11.jpg" alt="Promised neverland drink">
       <p> Deadly Topical Paradise </p>
       <p> $12.99 </p>
       <button type="button" id="NeverlandDrinkBtn">Details</button>
-      </section>
-      <section class="fit"><img src="images/014.jpg" alt="SpyXFamily">
-        <p> Strawberry smoothie</p>
-        <p> $9.99 </p>
-        <button type="button" id="SpyxFamilyDrinkBtn">Details</button>
-      </section>
-      <section class="fit"><img src="images/the-naruto-themed-cafe-in-akihabara-is-where-all-the-ninjas-eat-1.jpg" alt="Naruto drink">
-        <p> Naruto latte </p>
-        <p> $10.99 </p>
-        <button type="button" id="NarutoDrinkBtn">Details</button>
-      </section>
-    
+    </section>
+    <section class="fit"><img src="images/014.jpg" alt="SpyXFamily">
+      <p> Strawberry smoothie</p>
+      <p> $9.99 </p>
+      <button type="button" id="SpyxFamilyDrinkBtn">Details</button>
+    </section>
+    <section class="fit"><img src="images/the-naruto-themed-cafe-in-akihabara-is-where-all-the-ninjas-eat-1.jpg"
+        alt="Naruto drink">
+      <p> Naruto latte </p>
+      <p> $10.99 </p>
+      <button type="button" id="NarutoDrinkBtn">Details</button>
+    </section>
   </section>
 
 
@@ -232,6 +238,7 @@
       <a href="https://github.com/ElyLeslie" id="Ely">ElyLeslie</a>
     </section>
     <p id="est">Est. 2022</p>
+    <button type="button" id="ClearStorage">Clear</button>
   </footer>
 
 
