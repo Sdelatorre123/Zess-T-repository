@@ -274,8 +274,34 @@ var menu = [
         color: "Butter Cream Icing",
         series: "My Neighbor Totoro Topper",
         food: "Marble Cake",
-        // 19 DONE
+        // 19 
     },
+    {
+        color: "Rasperry Cream",
+        series: "My Hero Academia Beverage",
+        food: "Refreshing iced soda",
+        // 20
+    },
+    {
+        color: "Island Tropical Mint",
+        series: "Promised Neverland",
+        food: "Fresh sparkling water",
+        // 21
+    },
+    {
+        color: "Vanilla whipped cream topping",
+        series: "SpyXFamily Dessert",
+        food: "Strawberry Smoothie Blend",
+        // 22
+    },
+
+    {
+        color: "Soft Vanilla Topping",
+        series: "Naruto/Jirayah Coffee",
+        food: "Spicy Cinnamon Cuppacino Blend",
+        // 23 DONE
+    },
+
 ]
 //buttons for each card 
 $("[id=ToroBtn]").on("click", function (event) {
@@ -605,6 +631,90 @@ $("[id=AssassinBtn]").on("click", function (event) {
     munchies.text(menu[17].food);
     anime.text(menu[17].series);
     hue.text(menu[17].color);
+
+
+    munchies.attr('id', 'the-deets');
+    anime.attr('id', 'the-deets');
+    hue.attr('id', 'the-deets');
+
+    ingredients.append(munchies).append(anime).append(hue);
+})
+
+$("[id=ShotoTodorokiDrinkBtn]").on("click", function (event) {
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+
+    ingredients.children().remove();
+    var munchies = $('<li>');
+    var anime = $('<li>');
+    var hue = $('<li>');
+
+    munchies.text(menu[20].food);
+    anime.text(menu[20].series);
+    hue.text(menu[20].color);
+
+
+    munchies.attr('id', 'the-deets');
+    anime.attr('id', 'the-deets');
+    hue.attr('id', 'the-deets');
+
+    ingredients.append(munchies).append(anime).append(hue);
+})
+
+$("[id=NeverlandDrinkBtn]").on("click", function (event) {
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+
+    ingredients.children().remove();
+    var munchies = $('<li>');
+    var anime = $('<li>');
+    var hue = $('<li>');
+
+    munchies.text(menu[21].food);
+    anime.text(menu[21].series);
+    hue.text(menu[21].color);
+
+
+    munchies.attr('id', 'the-deets');
+    anime.attr('id', 'the-deets');
+    hue.attr('id', 'the-deets');
+
+    ingredients.append(munchies).append(anime).append(hue);
+})
+
+$("[id=SpyxFamilyDrinkBtn]").on("click", function (event) {
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+
+    ingredients.children().remove();
+    var munchies = $('<li>');
+    var anime = $('<li>');
+    var hue = $('<li>');
+
+    munchies.text(menu[22].food);
+    anime.text(menu[22].series);
+    hue.text(menu[22].color);
+
+
+    munchies.attr('id', 'the-deets');
+    anime.attr('id', 'the-deets');
+    hue.attr('id', 'the-deets');
+
+    ingredients.append(munchies).append(anime).append(hue);
+})
+
+$("[id=NarutoDrinkBtn]").on("click", function (event) {
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+
+    ingredients.children().remove();
+    var munchies = $('<li>');
+    var anime = $('<li>');
+    var hue = $('<li>');
+
+    munchies.text(menu[23].food);
+    anime.text(menu[23].series);
+    hue.text(menu[23].color);
 
 
     munchies.attr('id', 'the-deets');
