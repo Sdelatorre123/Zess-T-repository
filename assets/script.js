@@ -5,17 +5,31 @@ var AmountDonated = document.getElementById('AmtDonated');
 var AmountDue = document.getElementById('Due');
 var productPrice = 0;
 var total = 0;
+let createImage1= document.createElement('img');
 
 
 //fetch request for Anime of the week section 
-const base_url = "https://api.jikan.moe/v4/anime/{id}/pictures";
-
+const base_url = "https://api.jikan.moe/v3";
 function Anime(event){
-    //fetch(`${base_url}/search/anime?q=${query}&page=1`)
-    //.then(data=>console.log(data))
+    fetch(`${base_url}/manga/1/characters`)
+    .then(res=>res.json())
+    .then(data=> //console.log(data)
+            {
+            var characterImage = data.characters[0].image_url;
+            //console.log(characterImage);
+        var charactername = data.characters[0].name;
+
+        createImage1.src= characterImage;
+        document.getElementById('CharacterName').append(charactername);
+        document.getElementById('CharacterName').append(createImage1);
+        //console.log(charactername);
+    })
+}
+
+
     //.then(updateDom)
     //.catch(err=>console.warn(err.message));
-}
+
 //call fuction automatically
 Anime();
 
