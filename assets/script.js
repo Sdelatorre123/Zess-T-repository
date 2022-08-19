@@ -12,6 +12,7 @@ let createImage1 = document.createElement('img');
 $("[id=ClearStorage]").on("click", localStorage.clear());
 
 
+
 //fetch request for Anime of the week section 
 const base_url = "https://api.jikan.moe/v3";
 function Anime(event) {
@@ -192,7 +193,7 @@ $("[id=DonBtn]").on("click", function (event) {
     nameInput.attr('id', 'userinput1');
     donateList.append(nameInput);
     localStorage.setItem("UserName", JSON.stringify(firstname.val()));
-    firstname.val() = JSON.parse(localStorage.getItem("UserName"));
+    
 
 })
 
