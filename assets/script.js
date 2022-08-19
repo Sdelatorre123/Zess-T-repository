@@ -6,6 +6,7 @@ var AmountDue = document.getElementById('Due');
 var productPrice = 0;
 var total = 0;
 let createImage1 = document.createElement('img');
+let createImage2 = document.createElement('img');
 
 
 // clear local storage btn
@@ -31,13 +32,28 @@ function Anime(event) {
         })
 }
 
+const base_url2 = "https://kitsu.io/api/edge/trending/anime?page[limit]=1";
+function Anime2(event) {
+    fetch(`${base_url2}`)
+        .then(res => res.json())
+        .then(data =>//console.log(data))
+ {
+         var characterImage =  data.data[7].attributes.coverImage.small;
+           var title=data.data[7].attributes.titles.en;
+
+          createImage2.src = characterImage;
+document.getElementById('AnimeofWeek').append(title);
+            document.getElementById('AnimeofWeek').append(createImage2);
+           
+})
+}
 
 //.then(updateDom)
 //.catch(err=>console.warn(err.message));
 
 //call fuction automatically
 Anime();
-
+Anime2();
 
 
 
