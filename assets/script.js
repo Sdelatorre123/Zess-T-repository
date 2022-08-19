@@ -10,7 +10,11 @@ let createImage2 = document.createElement('img');
 
 
 // clear local storage btn
-$("[id=ClearStorage]").on("click", localStorage.clear());
+$("[id=ClearStorage]").on("click", function(){
+    localStorage.clear()
+    location.reload();
+} 
+);
 
 
 
