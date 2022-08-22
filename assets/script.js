@@ -6,10 +6,15 @@ var AmountDue = document.getElementById('Due');
 var productPrice = 0;
 var total = 0;
 let createImage1 = document.createElement('img');
+let createImage2 = document.createElement('img');
 
 
 // clear local storage btn
-$("[id=ClearStorage]").on("click", localStorage.clear());
+$("[id=ClearStorage]").on("click", function(){
+    localStorage.clear()
+    location.reload();
+} 
+);
 
 
 
@@ -31,13 +36,28 @@ function Anime(event) {
         })
 }
 
+const base_url2 = "https://kitsu.io/api/edge/trending/anime?page[limit]=1";
+function Anime2(event) {
+    fetch(`${base_url2}`)
+        .then(res => res.json())
+        .then(data =>//console.log(data))
+ {
+         var characterImage =  data.data[7].attributes.coverImage.small;
+           var title=data.data[7].attributes.titles.en;
+
+          createImage2.src = characterImage;
+document.getElementById('AnimeofWeek').append(title);
+            document.getElementById('AnimeofWeek').append(createImage2);
+           
+})
+}
 
 //.then(updateDom)
 //.catch(err=>console.warn(err.message));
 
 //call fuction automatically
 Anime();
-
+Anime2();
 
 
 
@@ -187,13 +207,21 @@ function calculateTotal() {
 
 //donate button
 $("[id=DonBtn]").on("click", function (event) {
-
+if(firstname.val() == "" || AmountDonated.value == ""){
+    console.log("true");
+    var element = document.getElementById('mypara');
+    element.innerHTML = "*Please fill out all fields";
+}
+else{
+    
     var nameInput = $('<li>');
     nameInput.text(firstname.val() + " $" + AmountDonated.value);
+    console.log(firstname.val());
+    console.log(AmountDonated.value);
     nameInput.attr('id', 'userinput1');
     donateList.append(nameInput);
     localStorage.setItem("UserName", JSON.stringify(firstname.val()));
-    
+}
 
 })
 
