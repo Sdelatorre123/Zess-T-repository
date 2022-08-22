@@ -207,13 +207,21 @@ function calculateTotal() {
 
 //donate button
 $("[id=DonBtn]").on("click", function (event) {
-
+if(firstname.val() == "" || AmountDonated.value == ""){
+    console.log("true");
+    var element = document.getElementById('mypara');
+    element.innerHTML = "*Please fill out all fields";
+}
+else{
+    
     var nameInput = $('<li>');
     nameInput.text(firstname.val() + " $" + AmountDonated.value);
+    console.log(firstname.val());
+    console.log(AmountDonated.value);
     nameInput.attr('id', 'userinput1');
     donateList.append(nameInput);
     localStorage.setItem("UserName", JSON.stringify(firstname.val()));
-    
+}
 
 })
 
